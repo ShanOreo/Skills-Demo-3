@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+p {
+  text-align: center;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* nav bar */
+
+nav {
+  background-color: #333;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* sliding panels */
+
+.panel {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  margin: 10px;
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  transform: translateX(300px);
+}
+
+.panel img {
+  max-width: 100%;
+  height: auto;
+}
+
+.small-panels .panel img {
+  max-width: 50%;
+  height: auto;
+}
+
+/* image rollovers */
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* Disable pointer events on hovered images */
+}
+
+.image-container img {
+  width: 300px; /* Adjust the width to make the images bigger */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* image gallery */
+.gallery {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gallery img {
+  max-width: calc(100% / 3 - 1rem);
+  height: auto;
+  margin: 0.5rem;
+}
+
+
